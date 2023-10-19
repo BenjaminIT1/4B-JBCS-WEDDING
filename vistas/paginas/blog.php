@@ -1,0 +1,236 @@
+<?php
+
+if (!isset($_SESSION["Iniciar"])) {
+    if ($_SESSION["Iniciar"] != "ok") {
+        echo '<script> window.location = "index.php?pagina=iniciar";</script>';
+        return;
+    } else {
+        echo '<script> windows.location = "index.php?pagina=blog";</script>';
+        return;
+    }
+}
+
+$usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
+
+?>
+<!--=========== Breadcumd Section Here ========= -->
+<section class="breadcumd__banner">
+   <div class="container">
+      <div class="breadcumd__wrapper center">
+         <h1 class="left__content">
+            our blog
+         </h1>
+         <ul class="right__content">
+            <li>
+               <a href="index.php?pagina=home">
+                  Home
+               </a>
+            </li>
+            <li>
+               <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+               blog
+            </li>
+         </ul>
+      </div>
+   </div>
+</section>
+<!--=========== Breadcumd Section Here ========= -->
+
+<!--=========== Blog Section Here ========= -->
+<section class="blog__section pt-120 pb-120">
+   <div class="left__shape">
+      <img src="html/assets/img/testi/shape-left.png" alt="left__shape">
+   </div>
+   <div class="container">
+      <div class="row g-4">
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog1.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">top 10 gifts</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog2.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">Best Photography Idea</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog3.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">Wedding Flower Collect</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog1.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">top 10 gifts</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog2.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">Best Photography Idea</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog3.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">Wedding Flower Collect</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog1.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">top 10 gifts</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog2.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">Best Photography Idea</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__items">
+               <div class="blog__thumb">
+                  <img src="html/assets/img/blog/blog3.jpg" alt="blog__image">
+               </div>
+               <div class="blog__content">
+                  <h4>
+                     <a href="blog-single.html">Wedding Flower Collect</a>
+                  </h4>
+                  <p>
+                     The tradition is based on an Old English rhyme that dates back to 19th-century Lancashire.It describes the items a bride should have on her wedding day.
+                  </p>
+                  <div class="blog-button mt-2">
+                     <a href="blog-single.html" class="blog-btn">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <ul class="default-pagination">
+            <li class="active-one">
+                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+            </li>
+            <li class="active">
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li class="active-one">
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+            <li>
+                <a href="#">5</a>
+            </li>
+            <li class="active-two">
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </li>
+        </ul>
+      </div>
+   </div>
+</section>
+<!--=========== Blog Section End ========= -->
